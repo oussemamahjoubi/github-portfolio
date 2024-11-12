@@ -66,12 +66,6 @@
             border-radius: 15px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
         }
         .about:hover {
             transform: scale(1.02);
@@ -97,12 +91,6 @@
             padding: 40px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
         }
         .skills:hover {
             transform: scale(1.02);
@@ -127,12 +115,12 @@
             align-items: center;
         }
 
-        /* Academic Projects Section */
-        .academic-projects {
+        /* Work Experience Section */
+        .work-experience {
             margin-top: 60px;
             max-width: 1200px;
         }
-        .academic-projects h2 {
+        .work-experience h2 {
             font-size: 2.5rem;
             color: #e94560;
             text-align: center;
@@ -198,6 +186,7 @@
         footer a:hover {
             color: #f77f99;
         }
+
     </style>
 </head>
 <body>
@@ -206,15 +195,13 @@
         <!-- Header Section -->
         <header>
             <h1>Oussema Mahjoubi</h1>
-            <p>Software Engineer</p>
+            <p>Software Engineer | DevOps & AI Enthusiast</p>
         </header>
 
         <!-- About Section -->
         <section class="about">
             <h2>About Me</h2>
-            <p>Motivated SoftwareEngineering student with a focus onDevOpsandartificialintelligence. Demonstrated ability in developing
-                scalable applications and implementing CI/CD pipelines. Seeking to leverage technical skills and hands-on experience in a
-                forward-thinking organization dedicated to AI-driven solutions.</p>
+            <p>I am a dedicated Software Engineering student with expertise in DevOps and artificial intelligence. Skilled in programming, building CI/CD pipelines, and developing scalable applications, I am eager to contribute to forward-thinking organizations focused on AI-driven solutions.</p>
         </section>
 
         <!-- Skills Section -->
@@ -231,10 +218,38 @@
             </div>
         </section>
 
-        <!-- Academic Projects Section -->
-        <section class="academic-projects">
-            <h2>Academic Projects</h2>
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+            <h2>Work Experience</h2>
             <div class="experience-grid">
+                <!-- Internship - Microsoft PowerBI and JIRA -->
+                <div class="experience-card">
+                    <h3>Intern - Microsoft PowerBI and JIRA</h3>
+                    <p>Spectrum Group, Tunisia (June 2022)</p>
+                    <ul>
+                        <li>Acquired skills in project management and data analysis through PowerBI and JIRA.</li>
+                    </ul>
+                </div>
+
+                <!-- Internship - Project Management -->
+                <div class="experience-card">
+                    <h3>Project Management Internship</h3>
+                    <p>Spectrum Group, Tunisia (July 2023)</p>
+                    <ul>
+                        <li>Utilized JIRA for project management, optimizing workflows and team coordination.</li>
+                    </ul>
+                </div>
+
+                <!-- Internship - Vermeg Software Engineering -->
+                <div class="experience-card">
+                    <h3>Software Engineering Internship</h3>
+                    <p>Vermeg, Tunisia (June 2024)</p>
+                    <ul>
+                        <li>Automated data processing with Python, reducing handling time significantly.</li>
+                        <li>Developed PowerBI dashboards for insightful data visualization.</li>
+                    </ul>
+                </div>
+
                 <!-- DevOps Project - Kaddem -->
                 <div class="experience-card">
                     <h3>DevOps Project - Kaddem</h3>
@@ -246,42 +261,18 @@
                     </ul>
                 </div>
 
-                <!-- Mobile Travel Agency Project -->
+                <!-- Academic Projects -->
                 <div class="experience-card">
-                    <h3>Mobile Travel Agency Project</h3>
+                    <h3>Java Mobile Application Project</h3>
                     <p>Esprit, Tunisia (2024)</p>
                     <ul>
-                        <li>Developed a mobile application for a travel agency using Kotlin, allowing users to browse and book travel packages.</li>
-                        <li>Integrated a dynamic search feature and user profile management to enhance the user experience.</li>
-                        <li>Utilized Firebase SQLite ,H2 and mySQL for data synchronization and real-time updates on bookings and promotions.</li>
-                    </ul>
-                </div>
-                <!-- Integrated Web Development Project (Angular-Spring Boot) -->
-                <div class="experience-card">
-                    <h3>Integrated Web Development Project (Angular-Spring Boot)</h3>
-                    <p>Esprit, Tunisia (2024)</p>
-                    <ul>
-                        <li>Development of a cross-platform application integrating Spring Boot Web Services, SOA, Angular, and Data Mining.</li>
-                        <li>Created a Python-based chatbot that consumes the ChatGPT API and is seamlessly integrated with Angular.</li>
+                        <li>Developed a multi-client application with Java, utilizing XML for UI design and database integration for dynamic data display.</li>
                     </ul>
                 </div>
 
-                <!-- Integrated Web Development Project (Java Mobile) -->
-                <div class="experience-card">
-                    <h3>Integrated Web Development Project (Java Mobile)</h3>
-                    <p>Esprit, Tunisia (2023)</p>
-                    <ul>
-                        <li>Development of an application with three distinct clients: Java, Web, and mobile.</li>
-                        <li>Languages used: Java, JavaFXML, Symfony, CodenameOne.</li>
-                    </ul>
-                </div>
-
-                
-
-                <!-- C++ Desktop Application Project -->
                 <div class="experience-card">
                     <h3>C++ Desktop Application Project</h3>
-                    <p>Esprit, Tunisia (2022)</p>
+                    <p>Esprit, Tunisia (2023)</p>
                     <ul>
                         <li>Built a desktop application using C++, applying object-oriented principles for user-friendly interfaces.</li>
                     </ul>
@@ -289,46 +280,12 @@
             </div>
         </section>
 
-        <!-- Internship Experience Section -->
-        <section class="internship-experience">
-            <h2>Internship Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3>Intern - Project Management</h3>
-                    <p>Spectrum Group (July 2021)</p>
-                    <ul>
-                        <li>Utilized Jira Server and Cloud for effective project tracking and generating comprehensive reports.</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <h3>Intern - Data Analysis</h3>
-                    <p>Spectrum Group (June 2022)</p>
-                    <ul>
-                        <li>Gained a comprehensive understanding of PowerBI and JIRA for data analysis and project management.</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <h3>Intern - Advanced Project Management</h3>
-                    <p>Spectrum Group (July 2023)</p>
-                    <ul>
-                        <li>Mastered Jira Work Management and integrated add-ons like Jira BigPicture, Xray, EazyBI, and Tempo.</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <h3>Intern - Data Management</h3>
-                    <p>Vermeg (June 2024)</p>
-                    <ul>
-                        <li>Automated data management processes with Python, creating PowerBI dashboards for data visualization.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
         <!-- Footer Section -->
         <footer>
-            <p>Connect with me on <a href="#">LinkedIn</a> or <a href="#">GitHub</a>.</p>
+            <p>Connect with me on <a href="https://linkedin.com/in/oussema-mahjoubi-76b529218" target="_blank">LinkedIn</a> | <a href="https://github.com/oussemamahjoubi" target="_blank">GitHub</a></p>
+            <p>&copy; 2024 Oussema Mahjoubi. All rights reserved.</p>
         </footer>
     </div>
 
 </body>
-</html>
+</html>  je veux que les sections about me et skills soit au milieu de la apge pas a gauche
