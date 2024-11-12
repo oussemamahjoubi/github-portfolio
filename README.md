@@ -44,6 +44,14 @@
 *Janvier 2024 — Juin 2024*  
 - Développement d'une application multi-plateforme utilisant Angular et Spring Boot, intégrant un chatbot en Python via l'API ChatGPT pour améliorer l'interaction utilisateur.
 
+**Projet DevOps - Automatisation de Pipeline CI/CD et Déploiement avec Docker et Jenkins**  
+*Projet Académique, Esprit, Tunisie*  
+*Janvier 2024 — Juin 2024*  
+- Mise en place d'un pipeline CI/CD automatisé pour une application web à l'aide de Jenkins, Docker et SonarQube.
+- Création de conteneurs Docker pour l'intégration continue et le déploiement, permettant des tests unitaires, une analyse de code statique et un déploiement automatisé dans un environnement de test.
+- Configuration de l'environnement avec des outils de gestion de versions et intégration continue pour accélérer les processus de développement et de livraison tout en maintenant la qualité du code.
+- Suivi de l'automatisation des tests avec Jenkins pour garantir la fiabilité et la performance des applications avant leur mise en production.
+
 **Stage en Gestion de Projet**  
 *Spectrum Group, La Goulette, Tunisie*  
 *Juillet 2021*  
@@ -59,6 +67,18 @@
 *Juin 2024 — Août 2024*  
 - Conception et automatisation des processus de gestion des données avec Python pour l'extraction et l'analyse des données de réservation sur la plateforme Welcome Workplace, réduisant le temps de traitement.
 - Développement de tableaux de bord PowerBI pour visualiser les insights, soutenant les décisions basées sur les données et améliorant l'efficacité des rapports.
+
+---
+
+## Activités Extra-professionnelles
+
+**Trésorier - Rotaract Cosmo**  
+*Rotaract Cosmo, Ariana, Tunisie*  
+*2022 - Présent*  
+- En tant que trésorier, gestion des finances du club, y compris la planification et la gestion des budgets pour des événements caritatifs et communautaires.
+- Participation à des projets de service communautaire, tels que l'organisation de campagnes de collecte de fonds pour des œuvres caritatives locales et la mise en place d'initiatives de développement durable.
+- Collaboration avec d'autres membres pour promouvoir l'esprit de leadership et d'engagement social parmi les jeunes adultes.
+- Organisation d'événements de réseautage pour favoriser les échanges entre professionnels et étudiants dans le cadre du développement personnel et professionnel.
 
 ---
 
