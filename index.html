@@ -523,37 +523,32 @@
       </div>
 
       <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <form action="https://formspree.io/f/mjkvozdv" method="post" class="php-email-form" id="contact-form" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-4">
-
             <div class="col-md-6">
               <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
             </div>
-
             <div class="col-md-6">
               <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
             </div>
-
             <div class="col-md-12">
               <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
             </div>
-
             <div class="col-md-12">
               <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
             </div>
-
             <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
+              <!-- Feedback Messages -->
+              <div id="loading" style="display: none;">Loading...</div>
+              <div id="error-message" style="display: none; color: red;">Failed to send your message. Please try again later.</div>
+              <div id="sent-message" style="display: none; color: green;">Your message has been sent. Thank you!</div>
               <button type="submit">Send Message</button>
             </div>
-
           </div>
         </form>
-      </div><!-- End Contact Form -->
-
+      </div>
+    
+      
     </div>
 
   </div>
@@ -599,6 +594,47 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault(); // Prevent default form submission behavior
+
+      // Show the loading message
+      const loading = document.getElementById("loading");
+      const errorMessage = document.getElementById("error-message");
+      const sentMessage = document.getElementById("sent-message");
+      loading.style.display = "block";
+      errorMessage.style.display = "none";
+      sentMessage.style.display = "none";
+
+      // Collect form data
+      const formData = new FormData(contactForm);
+
+      try {
+        // Send form data to Formspree
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        // Handle Formspree response
+        if (response.ok) {
+          loading.style.display = "none";
+          sentMessage.style.display = "block";
+          contactForm.reset(); // Reset the form fields
+        } else {
+          throw new Error("Form submission failed.");
+        }
+      } catch (error) {
+        loading.style.display = "none";
+        errorMessage.style.display = "block";
+      }
+    });
+  </script>
 
 </body>
 
