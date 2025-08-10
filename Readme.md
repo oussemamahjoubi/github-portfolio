@@ -121,7 +121,6 @@ Please adhere to clean code practices and include descriptive commit messages.
 - **LinkedIn**: [Oussema Mahjoubi](https://www.linkedin.com/in/oussema-mahjoubi-76b529218)
 - **GitHub**: [oussemamahjoubi](https://github.com/oussemamahjoubi)
 
-Freelance available—let's discuss your project!
 
 ## 📄 License
 
