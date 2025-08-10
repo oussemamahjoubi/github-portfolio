@@ -1457,3 +1457,55 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* Styling for the info list */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.info-list i {
+  font-size: 20px;
+  color: #0563bb;
+  margin-right: 10px;
+}
+
+/* Button styling */
+.download-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 1.5em;
+  background-color: #0563bb;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+  background-color: #003d80;
+  transform: translateY(-2px);
+}
+
+.download-btn .bgContainer {
+  display: flex;
+  align-items: center;
+}
+
+.download-btn .arrowContainer {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
