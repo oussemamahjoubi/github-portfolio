@@ -2,7 +2,7 @@
 
 # Oussema Mahjoubi's Portfolio Website 🚀
 
-<img src="assets/img/mahjoubi.jpg" alt="Portfolio Banner" width="100%">
+<img src="assets/img/Black_LinkedIn_Banner.png" alt="Portfolio Banner" width="100%">
 
 *Dynamic and responsive personal portfolio showcasing my journey as a Software Engineer specializing in DevSecOps, AI, and full-stack development.*
 
@@ -26,7 +26,6 @@ This repository hosts my personal portfolio website, built to highlight my profe
 - **AI Integration**: Developed conversational chatbots with Retrieval-Augmented Generation (RAG) and Qwen.
 - **Full-Stack Proficiency**: Projects in Angular, FastAPI, Spring Boot, and microservices architectures.
 
-The template is based on [MyResume by BootstrapMade](https://bootstrapmade.com/free-html-bootstrap-template-my-resume/), customized for my content.
 
 ## ✨ Features
 
@@ -53,65 +52,7 @@ This portfolio leverages a stack focused on performance, accessibility, and ease
 | **Build Tools**       | None required (static HTML/CSS/JS)                                                 |
 | **Version Control**   | Git                                                                                |
 
-## 🚀 Getting Started
 
-### Prerequisites
-- A modern web browser (Chrome, Firefox, etc.)
-- No server setup needed—this is a static site!
-2. Open `index.html` in your browser to view the site locally.
-
-### Deployment
-- **GitHub Pages**: Push to a `gh-pages` branch or enable Pages in repo settings for free hosting.
-- **Custom Domain**: Update DNS settings if deploying to Vercel, Netlify, or similar.
-- **Live Demo**: [View the live site here](https://oussemamahjoubi.github.io/portfolio/) (update with your actual URL).
-
-For development:
-- Use VS Code with Live Server extension for hot-reloading.
-- Validate HTML/CSS with W3C tools to ensure compatibility.
-
-## 🤝 Contributing
-
-While this is a personal portfolio, contributions are welcome for improvements like bug fixes or design enhancements. Follow these steps:
-1. Fork the repo.
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
-Please adhere to clean code practices and include descriptive commit messages.
-
-## 📸 Screenshots
-
-<details>
-<summary>Click to expand screenshots (to avoid page overload)</summary>
-
-### Home Section
-<img src="assets/img/screenshots/home.png" alt="Home Section" width="80%">
-*Hero banner with typed profession and social links.*
-
-### About Section
-<img src="assets/img/screenshots/about.png" alt="About Section" width="80%">
-*Personal bio, profile image, and key info.*
-
-### Skills Section
-<img src="assets/img/screenshots/skills.png" alt="Skills Section" width="80%">
-*Progress bars for technical proficiencies.*
-
-### Resume Section
-<img src="assets/img/screenshots/resume.png" alt="Resume Section" width="80%">
-*Detailed education, experience, and projects.*
-
-### Services Section
-<img src="assets/img/screenshots/services.png" alt="Services Section" width="80%">
-*Card-based overview of offered services.*
-
-### Contact Section
-<img src="assets/img/screenshots/contact.png" alt="Contact Section" width="80%">
-*Form and contact details.*
-
-*(Note: Add actual screenshot images to the `assets/img/screenshots/` folder in your repo for these to display. If you need help generating them, use browser dev tools or tools like Snipping Tool/Screenshot on your local setup.)*
-
-</details>
 
 ## 📞 Contact
 
