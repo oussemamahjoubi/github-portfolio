@@ -3,7 +3,7 @@
 <img src="assets/img/Black_LinkedIn_Banner.png" alt="Portfolio Banner" width="100%">
 <div align="center">
 
-#Mahjoubi's Oussema Portfolio Website 🚀
+Mahjoubi's Oussema Portfolio
 
 *Dynamic and responsive personal portfolio showcasing my journey as a Software Engineer specializing in DevSecOps, AI, and full-stack development.*
 
