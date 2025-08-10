@@ -19,7 +19,6 @@ Key highlights:
 - **AI Integration**: Developed conversational chatbots with Retrieval-Augmented Generation (RAG) and Qwen.
 - **Full-Stack Proficiency**: Projects in Angular, FastAPI, Spring Boot, and microservices architectures.
 
-The template is based on [MyResume by BootstrapMade](https://bootstrapmade.com/free-html-bootstrap-template-my-resume/), customized for my content.
 
 ## ✨ Features
 
@@ -45,7 +44,6 @@ This portfolio leverages a stack focused on performance, accessibility, and ease
   - PureCounter (Counters)
   - Waypoints (Scroll animations)
 - **Fonts**: Google Fonts (Roboto, Poppins, Raleway)
-- **Form Handling**: Formspree.io with custom JavaScript for async submission
 - **Icons**: Bootstrap Icons
 - **Build Tools**: None required (static HTML/CSS/JS)
 - **Version Control**: Git
