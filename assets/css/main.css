@@ -1515,6 +1515,6 @@ section,
 }
 @media (max-width: 768px) {
   .col-lg-6 .download-btn {
-    margin-left: 0; /* annule sur petits écrans */
+    margin-left: 2cm; /* annule sur petits écrans */
   }
 }
