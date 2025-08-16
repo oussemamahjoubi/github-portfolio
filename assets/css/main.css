@@ -1509,3 +1509,12 @@ section,
   display: flex;
   align-items: center;
 }
+/* Déplacement simple en modifiant le flux */
+.col-lg-6 .download-btn {
+  margin-left: 2cm;
+}
+@media (max-width: 768px) {
+  .col-lg-6 .download-btn {
+    margin-left: 0; /* annule sur petits écrans */
+  }
+}
