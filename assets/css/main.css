@@ -1477,7 +1477,7 @@ section,
   margin-right: 10px;
 }
 
-/* Button styling */
+
 .download-btn {
   display: flex;
   justify-content: space-between;
@@ -1509,12 +1509,16 @@ section,
   display: flex;
   align-items: center;
 }
-/* Déplacement simple en modifiant le flux */
+
+/* Décalage à gauche sur tous les écrans par défaut (desktop inclus) */
 .col-lg-6 .download-btn {
   margin-left: 2cm;
 }
+
+/* Centrage sur mobile (override le margin-left) */
 @media (max-width: 768px) {
   .col-lg-6 .download-btn {
-    margin-left: 2cm; /* annule sur petits écrans */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
