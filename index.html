@@ -661,6 +661,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+
   <script src="assets/js/main.js"></script>
   <script>
     const contactForm = document.getElementById("contact-form");
@@ -703,6 +704,25 @@
       }
     });
   </script>
+  <script src="assets/js/cookies.js"></script>
+
+  <!-- Cookie Card -->
+  <div id="cookies-overlay" class="cookies-overlay" style="display:none;" aria-hidden="true">
+    <div class="cookies-card" role="dialog" aria-label="Cookie policy">
+      <p class="cookie-heading">Cookies Policy</p>
+      <p class="cookie-para">Hello , please review our cookie policy.</p>
+      <div class="button-wrapper">
+        <button id="cookie-accept" class="accept cookie-button">Accept</button>
+        <button id="cookie-reject" class="reject cookie-button">Reject</button>
+      </div>
+      <button id="cookie-exit" class="exit-button" aria-label="Close cookie dialog">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 162 162" class="svgIconCross" aria-hidden="true">
+          <path stroke-linecap="round" stroke-width="17" stroke="black" d="M9.01074 8.98926L153.021 153"></path>
+          <path stroke-linecap="round" stroke-width="17" stroke="black" d="M9.01074 153L153.021 8.98926"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
 
 </body>
 
