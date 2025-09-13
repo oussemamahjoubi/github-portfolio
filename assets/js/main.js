@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const chatSend = document.querySelector('.chat-send');
   const chatMessages = document.querySelector('.chat-messages');
 
-  const WORKER_URL = 'ai-chat-bot-nine-iota.vercel.app';
+  const WORKER_URL = 'https://ai-chat-bot-nine-iota.vercel.app/api/gemini-chat';
 
   // Fonction pour afficher un message
   function appendMessage(text, isBot = false) {
