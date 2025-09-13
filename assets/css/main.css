@@ -1830,6 +1830,7 @@ section,
     min-height: 41px;
   }
   .chat-toggle {
+    right: auto;
     left: 20px;
     bottom: 20px;
     width: 55px;
