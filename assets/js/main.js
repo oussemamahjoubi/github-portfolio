@@ -227,3 +227,99 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+// Gestionnaire du chat
+document.addEventListener('DOMContentLoaded', function() {
+  const chatToggle = document.querySelector('.chat-toggle');
+  const chatContainer = document.querySelector('.chat-container');
+  const chatClose = document.querySelector('.chat-close');
+  const chatInput = document.querySelector('.chat-input');
+  const chatSend = document.querySelector('.chat-send');
+  const chatMessages = document.querySelector('.chat-messages');
+
+  const WORKER_URL = 'https://gemini-chatbot-worker.oussemamahjoubi.workers.dev/';
+
+  // Fonction pour afficher un message
+  function appendMessage(text, isBot = false) {
+    const messageEl = document.createElement('div');
+    messageEl.className = isBot ? 'bot-message' : 'user-message';
+    messageEl.style.marginBottom = '10px';
+    messageEl.style.padding = '8px';
+    messageEl.style.borderRadius = '8px';
+    messageEl.style.backgroundColor = isBot ? '#f0f0f0' : '#0563bb';
+    messageEl.style.color = isBot ? '#000' : '#fff';
+    messageEl.style.maxWidth = '80%';
+    messageEl.style.alignSelf = isBot ? 'flex-start' : 'flex-end';
+    messageEl.textContent = text;
+    chatMessages.appendChild(messageEl);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  // Fonction pour afficher/masquer le chat
+  function toggleChat() {
+    if (chatContainer.style.display === 'flex') {
+      chatContainer.style.display = 'none';
+      chatToggle.innerHTML = '<i class="bi bi-chat-dots"></i>';
+    } else {
+      chatContainer.style.display = 'flex';
+      chatToggle.innerHTML = '<i class="bi bi-chat-dots-fill"></i>';
+      chatInput.focus();
+    }
+  }
+
+  // Gérer les clics sur le toggle et le bouton fermer
+  chatToggle.addEventListener('click', toggleChat);
+  chatClose.addEventListener('click', toggleChat);
+
+  // Empêcher la fermeture lors d'un clic dans le chat
+  chatContainer.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Fonction pour envoyer le message à l'API
+  async function sendMessage() {
+    const message = chatInput.value.trim();
+    if (!message) return;
+
+    // Afficher le message de l'utilisateur
+    appendMessage(message);
+    chatInput.value = '';
+
+    try {
+      // Afficher indicateur de chargement
+      const loadingEl = document.createElement('div');
+      loadingEl.className = 'loading-message';
+      loadingEl.textContent = 'En train d\'écrire...';
+      chatMessages.appendChild(loadingEl);
+
+      // Appeler le Worker Cloudflare
+      const response = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message })
+      });
+
+      if (!response.ok) throw new Error('Erreur réseau');
+
+      const data = await response.json();
+
+      // Supprimer l'indicateur de chargement
+      loadingEl.remove();
+
+      // Afficher la réponse du bot
+      appendMessage(data.response, true);
+
+    } catch (error) {
+      console.error('Erreur:', error);
+      appendMessage('Désolé, une erreur s\'est produite. Veuillez réessayer.', true);
+    }
+  }
+
+  chatSend.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  });
+});
