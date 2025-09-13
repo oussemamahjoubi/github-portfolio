@@ -1510,16 +1510,23 @@ section,
   align-items: center;
 }
 
-/* Décalage à gauche sur tous les écrans par défaut (desktop inclus) */
+
+
 .col-lg-6 .download-btn {
-  margin-left: 2cm;
+  margin-left: 0;
+  margin-top: 10px;
 }
 
-/* Centrage sur mobile (override le margin-left) */
-@media (max-width: 768px) {
+/* Centrage parfait sur mobile */
+@media (max-width: 991.98px) {
+  .col-lg-6 {
+    align-items: center;
+  }
   .col-lg-6 .download-btn {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: 320px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /* Cookie card */
