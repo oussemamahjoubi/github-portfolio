@@ -291,6 +291,10 @@ document.addEventListener('DOMContentLoaded', function() {
       loadingEl.textContent = 'En train d\'écrire...';
       chatMessages.appendChild(loadingEl);
 
+      console.log('Envoi de la requête à l\'URL:', WORKER_URL);
+      console.log('Avec la méthode:', 'POST');
+      console.log('Et le corps JSON:', { message });
+
       // Appeler le Worker Cloudflare
       const response = await fetch(WORKER_URL, {
         method: 'POST',
