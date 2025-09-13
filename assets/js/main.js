@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const chatSend = document.querySelector('.chat-send');
   const chatMessages = document.querySelector('.chat-messages');
 
-  const WORKER_URL = 'https://gemini-chatbot-worker.gamerstun968.workers.dev/';
+  const WORKER_URL = 'ai-chat-bot-nine-iota.vercel.app';
 
   // Fonction pour afficher un message
   function appendMessage(text, isBot = false) {
