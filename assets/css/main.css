@@ -1778,8 +1778,7 @@ section,
 .chat-toggle:active,
 .chat-toggle:hover {
   transform: scale(1.09);
-}
-/* Responsive mobile perfection */
+}/* Responsive mobile perfection */
 @media (max-width: 600px) {
   .chat-container {
     /* Nouvelle taille et position pour un meilleur look sur mobile */
@@ -1801,7 +1800,7 @@ section,
     font-size: 1.02rem;
   }
   .chat-title {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .chat-messages {
     padding: 10px 2px;
@@ -1815,19 +1814,19 @@ section,
     max-width: 97%;
   }
   .chat-input-container {
-    padding: 10px 4px;
-    gap: 7px;
+    padding: 5px; /* Réduit le padding pour plus d'espace */
+    gap: 5px; /* Réduit l'espace entre les éléments */
   }
   .chat-input {
-    padding: 13px 9px;
-    font-size: 1.05rem;
+    padding: 10px; /* Réduit la taille du padding */
+    font-size: 1rem; /* Réduit la taille de la police */
     min-width: 0;
   }
   .chat-send {
-    padding: 0 12px;
-    font-size: 1.17rem;
-    min-width: 41px;
-    min-height: 41px;
+    padding: 0; /* Réduit le padding */
+    font-size: 1rem; /* Réduit la taille de la police */
+    min-width: 35px; /* Réduit la largeur minimale */
+    min-height: 35px; /* Réduit la hauteur minimale */
   }
   .chat-toggle {
     right: auto;
