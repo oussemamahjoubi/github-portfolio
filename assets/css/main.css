@@ -1779,72 +1779,57 @@ section,
 .chat-toggle:hover {
   transform: scale(1.09);
 }
+/* Responsive mobile perfection */
 @media (max-width: 600px) {
   .chat-container {
-    /* Set the container to occupy the entire screen */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    border-radius: 0; /* Remove border-radius for full screen */
-    box-shadow: none; /* Remove box-shadow */
-
-    /* Use flexbox for a flexible layout */
-    display: flex;
-    flex-direction: column;
+    /* Nouvelle taille et position pour un meilleur look sur mobile */
+    bottom: 20px; /* Ajoute un espace en bas */
+    right: 20px; /* Ajoute un espace à droite */
+    left: 20px; /* Ajoute un espace à gauche */
+    width: auto;
+    max-width: none;
+    height: 85vh; /* Une hauteur plus raisonnable */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1rem;
+    opacity: 1;
+    transform: none;
   }
-
   .chat-header {
     min-height: 51px;
     padding: 13px 10px;
     font-size: 1.02rem;
-    background-color: #fff; /* Add a background color */
   }
-
   .chat-title {
     font-size: 0.8rem;
   }
-
   .chat-messages {
     padding: 10px 2px;
     font-size: 1.02rem;
     gap: 10px;
-    flex-grow: 1; /* Allow messages to take up all space */
-    overflow-y: auto; /* Enable scrolling for messages */
   }
-
   .user-message,
   .bot-message {
     padding: 13px 8px;
     font-size: 1.03rem;
     max-width: 97%;
   }
-
   .chat-input-container {
-    padding: 5px;
-    gap: 5px;
-    background-color: #fff; /* Add a background color */
+    padding: 5px; /* Réduit le padding pour plus d'espace */
+    gap: 5px; /* Réduit l'espace entre les éléments */
   }
-
   .chat-input {
-    padding: 10px;
-    font-size: 1rem;
+    padding: 10px; /* Réduit la taille du padding */
+    font-size: 1rem; /* Réduit la taille de la police */
     min-width: 0;
   }
-
   .chat-send {
-    padding: 0;
-    font-size: 1rem;
-    min-width: 35px;
-    min-height: 35px;
+    padding: 0; /* Réduit le padding */
+    font-size: 1rem; /* Réduit la taille de la police */
+    min-width: 35px; /* Réduit la largeur minimale */
+    min-height: 35px; /* Réduit la hauteur minimale */
   }
-
   .chat-toggle {
-    /* If the chat container is full screen, the toggle button should be placed relative to the viewport. */
     right: auto;
     left: 20px;
     bottom: 20px;
@@ -1854,17 +1839,19 @@ section,
   }
 }
 
-/* Specific adjustments for ultra-small screens */
+/* Ultra petits écrans (iPhone SE, etc.) */
 @media (max-width: 420px) {
+  .chat-container {
+    /* Ajustement pour les très petits écrans */
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
   .chat-header,
-  .chat-input-container {
-    padding: 7px 1px;
-  }
-
-  .chat-messages {
-    padding: 4px 1px;
-  }
+  .chat-input-container { padding: 7px 1px; }
+  .chat-messages { padding: 4px 1px; }
 }
+
 @media (max-width: 375px) {
   .chat-title { font-size: 0.93rem; }
   .chat-header { min-height: 43px; }
