@@ -1783,64 +1783,68 @@ section,
 @media (max-width: 600px) {
   .chat-container {
     /* Nouvelle taille et position pour un meilleur look sur mobile */
-    position: relative; /* Ensure stacking context for fixed header */
-    bottom: 20px; /* Ajoute un espace en bas */
-    right: 20px; /* Ajoute un espace à droite */
-    left: 20px; /* Ajoute un espace à gauche */
+    position: fixed; /* Use fixed position for the whole container */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
     width: auto;
     max-width: none;
-    height: 85vh; /* Une hauteur plus raisonnable */
+    height: 100vh; /* Start with full viewport height */
+    max-height: 100vh; /* Ensure it never goes beyond the viewport height */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     font-size: 1rem;
     opacity: 1;
     transform: none;
-    padding-top: 51px; /* Reserve space for the fixed header */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
   }
+
   .chat-header {
-    position: fixed;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    width: auto;
+    position: sticky; /* Sticky is a great alternative to fixed */
+    top: 0; /* Stick it to the top of its parent */
+    z-index: 10; /* Make sure it's on top of other content */
     min-height: 51px;
     padding: 13px 10px;
     font-size: 1.02rem;
-    z-index: 100; /* Ensure it stays above other elements */
-    background: #fff; /* Ensure header is visible */
-    border-radius: 12px 12px 0 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background-color: white; /* Add a background color to hide content behind it */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Optional: add a subtle shadow */
   }
-  .chat-title {
-    font-size: 0.8rem;
-  }
+
   .chat-messages {
-    margin-top: 0; /* Header space reserved in container */
     padding: 10px 2px;
     font-size: 1.02rem;
     gap: 10px;
+    overflow-y: auto; /* Make this section scrollable */
+    flex-grow: 1; /* Allow it to take up all available space */
   }
+
   .user-message,
   .bot-message {
     padding: 13px 8px;
     font-size: 1.03rem;
     max-width: 97%;
   }
+
   .chat-input-container {
     padding: 5px; /* Réduit le padding pour plus d'espace */
     gap: 5px; /* Réduit l'espace entre les éléments */
+    background-color: white; /* Add a background color */
   }
+
   .chat-input {
     padding: 10px; /* Réduit la taille du padding */
     font-size: 1rem; /* Réduit la taille de la police */
     min-width: 0;
   }
+
   .chat-send {
     padding: 0; /* Réduit le padding */
     font-size: 1rem; /* Réduit la taille de la police */
     min-width: 35px; /* Réduit la largeur minimale */
     min-height: 35px; /* Réduit la hauteur minimale */
   }
+
   .chat-toggle {
     right: auto;
     left: 20px;
@@ -1850,22 +1854,16 @@ section,
     font-size: 1.55rem;
   }
 }
-
 /* Ultra petits écrans (iPhone SE, etc.) */
 @media (max-width: 420px) {
   .chat-container {
+    /* Ajustement pour les très petits écrans */
     bottom: 10px;
     left: 10px;
     right: 10px;
-    padding-top: 42px; /* Adjust for smaller header */
   }
   .chat-header,
   .chat-input-container { padding: 7px 1px; }
-  .chat-header {
-    left: 10px;
-    right: 10px;
-    min-height: 42px;
-  }
   .chat-messages { padding: 4px 1px; }
 }
 
